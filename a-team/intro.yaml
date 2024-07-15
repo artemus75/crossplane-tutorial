@@ -50,6 +50,6 @@ spec:
     port: 8080
     host: silly-demo.acme.com
     dbSecret:
-      name: silly-demo-db
+      name: silly-demo-db-20240715191411
       namespace: a-team
     kubernetesProviderConfigName: cluster01
