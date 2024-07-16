@@ -16,7 +16,7 @@ spec:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: silly-demo-db-20240715191411-password
+  name: silly-demo-db-20240716141852-password
 data:
   password: SVdpbGxOZXZlclRlbGxAMQ==
 ---
@@ -25,7 +25,7 @@ kind: SQLClaim
 metadata:
   name: silly-demo-db
 spec:
-  id: silly-demo-db-20240715191411
+  id: silly-demo-db-20240716141852
   compositionSelector:
     matchLabels:
       provider: azure
@@ -50,6 +50,6 @@ spec:
     port: 8080
     host: silly-demo.acme.com
     dbSecret:
-      name: silly-demo-db-20240715191411
+      name: silly-demo-db
       namespace: a-team
     kubernetesProviderConfigName: cluster01
